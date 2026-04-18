@@ -1,0 +1,12 @@
+<h2>Users</h2>
+<p>{{users.length}}</p>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.id}}- {{user.name}}
+    </li>
+</ul>
+
+<h2>Add User</h2>
+
+<input [(ngModel)]="newUserName" placeholder="Enter name"/>
+<button (click)="addUser()">Add</button>
